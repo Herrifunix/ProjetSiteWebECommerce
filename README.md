@@ -16,3 +16,15 @@ idées de BPF :
           - une branche debug, ou l'on résout les bugs de la branche dev
 - dans la branche dev, il faudrait probablement que chaque nouvelle fonctionnalité soit développé dans une branche séparé, de meme pour la branche debug
 
+
+# Organisation du site Web
+idées de SS :
+- Le sera un site d'e-commerce sportif, il contiendra les catégories suivantes :
+          - Le vélo
+          - La natation
+          - Le foot
+          - Le basketball
+          - Une partie autre
+  Chaque image de présentation sera généré par intelligence artificielle.
+
+

@@ -19,12 +19,22 @@ idées de BPF :
 
 # Organisation du site Web
 idées de SS :
-- Le sera un site d'e-commerce sportif, il contiendra les catégories suivantes :
+- Le site sera un site d'e-commerce sportif, il contiendra les catégories suivantes :
           - Le vélo
           - La natation
           - Le foot
           - Le basketball
           - Une partie autre
-  Chaque image de présentation sera généré par intelligence artificielle.
+  Chaque image de présentation sera générée par intelligence artificielle.
+
+- Le site sera composé de la page d'accueil avec la liste des catalogues, d'une page panier et d'une page de validation de commande
+
+
+# Avancée du projet
+
+- Création et gestion du repository fait le 02/02/2024
+- Wireframe papier fait le 02/02/2024 et fait sur html, css le 03/02/2024
+- Toutes les images ont été générées le 04/02/2024        
+
 
 

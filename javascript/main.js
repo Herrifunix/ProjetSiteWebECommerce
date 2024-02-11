@@ -18,27 +18,26 @@ function affichageProduits(response){
 //boucle for pour afficher les objet
     for (i=0; i < response.length; i++){
 
-
     response.forEach((element, i) => {
             _id[i] = element._id;
             nomProduit[i] = element.nomProduit;
             description[i] = element.description;
             prix[i] = element.prix;
-
+        
     });
+    
     //afficher les objets sur la page web
     structureProduits += 
     ` 
-    
         <article class = "mise-en-page-produit">
-            <a href="../html/produit.html?id=${_id[i]}">
+            <a href="html/produit.html?id=${_id[i]}">
                 <ul>
                     <li>Nom: <span>${nomProduit[i]}</span></li>
                     <li>description: <span>${description[i]}</span></li>
                     <li>Prix: <span></span>${prix[i] /100} €</li>
                 
                 </ul>
-                </a>
+            </a>   
         </article>
     
     `;
@@ -47,11 +46,10 @@ function affichageProduits(response){
 
     positionElement.innerHTML = structureProduits;
 
-
- }
     
-}
+ }
 
+}
 
 
 //Ca change quasi rien

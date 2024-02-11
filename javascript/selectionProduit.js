@@ -33,6 +33,10 @@ const structureProduits2 =
     <label for="option_produit">Choisir l'option : </label>
         <select id="option_produit" name="option_produit">
         </select>
+
+        <label for="option_produit">Choisir la quantité : </label>
+        <select id="quantite_produit" name="quantite_produit">
+        </select>
 </form>
 <button id="btn-envoi" type="submit" name="btn-envoi">Ajouter l'article au panier</button>
 
@@ -46,7 +50,7 @@ let structureOptions = [];
 //boucle for pour afficher toutes les option possibles.
 for (let j=0; j < optionQuantite.length; j++){
     structureOptions = structureOptions + 
-    `<option value="${j+1}">${optionQuantite[j]}</option>
+    `<option value="${optionQuantite[j]}">${optionQuantite[j]}</option>
     `
     ;
 }
@@ -60,11 +64,25 @@ positionElement3.innerHTML = structureOptions;
 console.log(positionElement3)
 
 
+//Gestion Quantite
+const structureQuantite = `
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+`;
+
+const positionElementQuantite = document.querySelector("#quantite_produit");
+positionElementQuantite.innerHTML = structureQuantite;
+
+
+
+
+//Gestion du click du boutton ajouter au panier
+
 const idForm = document.querySelector("#option_produit");
 
-
 const btnPanier = document.querySelector("#btn-envoi");
-
 
 btnPanier.addEventListener("click", (event)=>{
 event.preventDefault();
@@ -72,18 +90,58 @@ event.preventDefault();
 //le choix de l'option.
 const choixForm = idForm.value;
 
+//Quantite mettre dnas une variable
+const choixQuantite = positionElementQuantite.value;
+
 //recupération des informations du formulaires.
 let optionsProduit = {
     nomProduit: idProduitSelect.nomProduit,
     id_ProduitSelect: idProduitSelect._id,
     optionProduit: choixForm,
-    quantite: 1,
-    prix: idProduitSelect.prix / 100
+    quantite: choixQuantite,
+    prix: (idProduitSelect.prix * choixQuantite) / 100
 
 }
 
 console.log(optionsProduit)
 
+//---------------Le local storage-----------------
+//--------------Stocker la recuperation des valeur-------------
+
+let produitSaveInLocalStorage = JSON.parse(localStorage.getItem("produit"));
+
+
+//fonction fenetre pop up
+const popupConfirmation = () =>{
+    if(window.confirm(`${idProduitSelect.nomProduit} option : ${choixForm} a bien été ajouté au panier Consultez le panier OK ou revenir à l'acceuil ANNULER`)){
+window.location.href = "panier.html";
+    }else{
+        window.location.href = "../index.html";
+    }
+
+}
+
+//fonction ajouter un prduit du local strorage
+const ajoutProduitLocalStorage = () => {
+
+    produitSaveInLocalStorage.push(optionsProduit);
+    //transformation JSON  et l'envoyer dans la clé produit du local storage
+    localStorage.setItem("produit", JSON.stringify(produitSaveInLocalStorage));
+}
+//if deja produit
+if(produitSaveInLocalStorage){
+    ajoutProduitLocalStorage();
+    popupConfirmation();
+}
+//Sinon
+else{
+    produitSaveInLocalStorage = [];
+    ajoutProduitLocalStorage();
+    popupConfirmation();
+}
+
+
 })
+
 
 

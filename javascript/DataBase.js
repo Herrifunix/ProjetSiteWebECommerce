@@ -2,8 +2,8 @@
 const response = [
     {
         _id: "a001",
-        nomProduit : "nom produit 1",
-        description : "description 1",
+        nomProduit : "velo",
+        description : "descriptzr'eion 1",
         options:[
             "option1",
             "option2",
@@ -70,26 +70,7 @@ const response = [
         prix: 6
 
     },
-    {
-        _id: "a007",
-        nomProduit : "nom produit 7",
-        description : "description 7",
-        options:[
-            "option1",
-            "option2"
-        ],
-        prix: 7
+    
 
-    },
-    {
-        _id: "a008",
-        nomProduit : "nnoke",
-        description : "dazegheryjheaztey",
-        options:[
-            "option1",
-            "option2"
-        ],
-        prix: 7853
-
-    },
+    
 ];

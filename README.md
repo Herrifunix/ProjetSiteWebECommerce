@@ -34,7 +34,10 @@ idées de SS :
 
 - Création et gestion du repository fait le 02/02/2024
 - Wireframe papier fait le 02/02/2024 et fait sur html, css le 03/02/2024
-- Toutes les images ont été générées le 04/02/2024        
+- Toutes les images ont été générées le 04/02/2024
+- Développement de la page main (html et css) entre le 05 et 09/02/2024
+- Création de Database le 10/02/2024
+- Création de fichiers js pour générer le catalogue via la database et les pages produits via également la database le 11/02/2024        
 
 
 

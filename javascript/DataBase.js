@@ -2,6 +2,7 @@
 const response = [
     {
         _id: "a001",
+        img: "images/person.svg",
         nomProduit : "velo",
         description : "descriptzr'eion 1",
         options:[
@@ -15,6 +16,7 @@ const response = [
     },
     {
         _id: "a002",
+        img: "images/logo.png",
         nomProduit : "nom produit 2",
         description : "description 2",
         options:[

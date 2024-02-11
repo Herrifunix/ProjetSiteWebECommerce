@@ -7,6 +7,7 @@ let description = [];
 let prix = [];
 let structureProduits = "";
 let i = []; 
+let img =[];
 
 //fonction va afficher les produits dans la page web auto
 
@@ -23,6 +24,7 @@ function affichageProduits(response){
             nomProduit[i] = element.nomProduit;
             description[i] = element.description;
             prix[i] = element.prix;
+            img[i] = element.img;
         
     });
     
@@ -31,6 +33,7 @@ function affichageProduits(response){
     ` 
         <article class = "mise-en-page-produit">
             <a href="html/produit.html?id=${_id[i]}">
+                <img src=${img[i]}>
                 <ul>
                     <li>Nom: <span>${nomProduit[i]}</span></li>
                     <li>description: <span>${description[i]}</span></li>
@@ -43,7 +46,6 @@ function affichageProduits(response){
     `;
 
     //injection html
-
     positionElement.innerHTML = structureProduits;
 
     

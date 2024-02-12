@@ -130,7 +130,7 @@ section{
 section article {
     display: flex;
     border: 1px solid;
-    width: 40%;
+    width: 30%;
     padding: 1%;
     margin: 2em;
 }
@@ -141,7 +141,7 @@ article{
     align-items: center;
     flex-wrap: wrap;
     margin: 50px;
-    width: 40%;
+    width: 20%;
 }
 
 

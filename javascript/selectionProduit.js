@@ -22,15 +22,17 @@ const positionElement2 = document.querySelector(".containerPageProduit");
 const structureProduits2 =
 `<article class = "mise-en-page-produit">
     <div class="produit">
+    
 <ul>
-    <li>Nom: <span>${idProduitSelect.nomProduit}</span></li>
-    <li>description: <span>${idProduitSelect.description}</span></li>
+    <img src="../${idProduitSelect.img}" alt="image de produit">
+    <li><span>${idProduitSelect.nomProduit}</span></li>
+    <li><span>${idProduitSelect.description}</span></li>
     <li>Prix: <span>${idProduitSelect.prix /100} €</span></li>
 
 </ul>
 
 <form>
-    <label for="option_produit">Choisir l'option : </label>
+    <label for="option_produit">Choisir la taille et/ou couleur : </label>
         <select id="option_produit" name="option_produit">
         </select>
 

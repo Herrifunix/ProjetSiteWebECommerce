@@ -4,6 +4,3 @@ const affichageProduit = require('./javascript/'); // Importation de la fonction
 
 
 const test2 = require('./');
-
-
-

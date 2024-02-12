@@ -13,21 +13,24 @@ body{
     flex-wrap: wrap;
 }
 
-header{
+
+body > :first-child{
+    width:100%;
     position: sticky;
-    top: 1.5%;
+    top: 0%;
+}
+
+header{
     display:flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: .5%;
-    background-color: rgb(140, 194, 233);
+    background-color: rgb(70, 150, 207);
     border-radius: 10px 10px 0px 0px;
 }
 header a {
     text-decoration: none;
     color: white;
-    background-color: rgb(70, 150, 207);
     border-radius: 10px;
     padding-left: .5%;
     width: 18.5%;
@@ -83,41 +86,37 @@ header div a img:hover{
 }
 
 nav{
-    position: sticky;
-    top: 5%;
     display: flex;
     width: 100%;
     justify-content: space-around;
-    position: sticky;
     background-color: rgb(255, 255, 255);
     margin-bottom: 1%;
     border-radius: 0 0 10px 10px;
 }
-nav a{
-    padding: .2%;
-    width: 10%;
+
+.categorie-btn{
+    padding: 0.2%;
+    margin: 0.5%;
+    width: 18%;
+    background-color: white;
+    border-style: none;
     text-align: center;
     font-size: x-large;
-    text-decoration: none;
     color: black;
 }
 
-nav a:hover,
+nav .categorie-btn:hover,
 header form :last-child:hover{
     background-color: rgba(221, 221, 221, 0.8);
     border-radius: 5px;
     cursor: pointer;
 }
 
-aside{
-    width: 20%;
-    background: greenyellow;
-}
 
 main{
     display: flex;
-    width: 80%;
-    background-image: url("../images/banniere.jpeg");
+    width: 100%;
+    background: rgb(255, 255, 255);
     justify-content: space-around;
 }
 
@@ -129,26 +128,49 @@ section{
     margin: 1em;
 }
 
-article img{
-    display: flex;
-    justify-content: center;
-}
 section article {
     display: flex;
     border: 1px solid;
-    width: 37%;
+    width: 20%;
     padding: 1%;
     margin: 2em;
-    background: rgba(255, 255, 255, 0.8);
 }
+
 img{
     display: flex;
-    width: 50px;
+    width: 100%;
 }
+
+main section article > *{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+}
+ul{
+    list-style: none;
+}
+ul > :last-child{
+    padding: 2px;
+    font-size: larger;
+}
+ul > :nth-child(1){
+    height: 350px;
+}
+ul > :nth-child(2){
+    padding: 2px;
+    font-size: 100;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+ul :nth-child(3){
+    padding: 2px;
+    font-size: 80%;
+    font-family: sans-serif;
+}
+
 footer{
     width: 100%;
     background-color: rgba(221, 221, 221, 0.8);
     text-align: center;
+    
 }
-
-

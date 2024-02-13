@@ -1,7 +1,6 @@
-const tot = require(''); // Importation de la fonction depuis le même répertoire
-const tot = require(''); // Importation de la fonction depuis le même répertoire
-const tot = require(''); // Importation de la fonction depuis le même répertoire
-const tot = require(''); // Importation de la fonction depuis le même répertoire
+const NOM = require('CHEMIN RELATIF');
 
-
-//Les tests viendront ici
+test('NOM', () => {
+  expect(NOMFONCTION(valeur)).toBe(valeur);
+  expect(NOMFONCTION(valeur)).toBe(valeur);
+});

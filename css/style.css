@@ -4,7 +4,7 @@
 }
 
 html{
-    background-color: rgb(163, 157, 223);
+    background-color: rgb(212, 230, 255);
 }
 
 body{
@@ -50,7 +50,7 @@ header form{
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    height: 70%;
+
     width: 20%;
     border-radius: 10px;
 }
@@ -62,9 +62,7 @@ header form > * {
     padding-left: 3%;
     padding-right: 3%;
 }
-header form :first-child{
-    width: 85%;
-}
+
 
 header div{
     display: flex;
@@ -85,6 +83,9 @@ header div a img:hover{
     background-color: rgb(255, 255, 255);
 }
 
+#loupe{width: 9%;
+padding: 2px;}
+
 nav{
     display: flex;
     width: 100%;
@@ -103,6 +104,19 @@ nav{
     text-align: center;
     font-size: x-large;
     color: black;
+}
+
+nav a {
+    padding: 0.2%;
+    margin: 0.5%;
+    width: 18%;
+    background-color: rgb(221, 221, 221);
+    border-style: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    border-radius: 8px;
 }
 
 nav .categorie-btn:hover,

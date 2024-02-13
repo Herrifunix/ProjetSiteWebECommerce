@@ -24,8 +24,9 @@ const panierVide = `
     for(k = 0;k < produitSaveInLocalStorage.length; k++){
         structureProduitsPanier = structureProduitsPanier + `
         <div class="container-recapitulatif">
-            <div>Quantité : ${produitSaveInLocalStorage[k].quantite} - ${produitSaveInLocalStorage[k].nomProduit} Options : ${produitSaveInLocalStorage[k].optionProduit}</div>
-            <div>${produitSaveInLocalStorage[k].prix} € - <button class="btn-supprimer">Supprimer</button></div>
+            <div id=ArticleId>Quantité : ${produitSaveInLocalStorage[k].quantite} - ${produitSaveInLocalStorage[k].nomProduit} Options : ${produitSaveInLocalStorage[k].optionProduit}</div>
+            <div>Prix : ${produitSaveInLocalStorage[k].prix} € - <br><button class="btn-supprimer">Supprimer article</button>
+            </div>
         </div>           
         `;
         }
@@ -72,7 +73,7 @@ const reducer = (accumulator, currentValue) => accumulator + currentValue;
 const prixTotal = prixtotalcalc.reduce(reducer,0);
 
 const affichagePrix = `
-<div class="affichage-prix">Le prix total est de ${prixTotal} €</div>
+<div class="affichage-prix">Le prix total est de ${prixTotal} € </div><hr>
 `;
 
 positionElement3.insertAdjacentHTML("beforeend",affichagePrix);
@@ -81,7 +82,10 @@ positionElement3.insertAdjacentHTML("beforeend",affichagePrix);
 //------------------Bouton pour supprimer tout-----------------
 
 const btn_suppr_all_html = `
+<div id="centre">
+
 <button class="btn_suppr_all"> Vider le panier</button>
+</div>
 `;
 
 //insertion du boutton

@@ -35,6 +35,7 @@ const structureProduits2 =
     <label for="option_produit">Choisir la taille et/ou couleur : </label>
         <select id="option_produit" name="option_produit">
         </select>
+        <br>
 
         <label for="option_produit">Choisir la quantité : </label>
         <select id="quantite_produit" name="quantite_produit">

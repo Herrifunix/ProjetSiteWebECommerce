@@ -184,6 +184,10 @@ ul :nth-child(3){
     font-family: sans-serif;
 }
 .mise-en-page-produit{
+    width: 25%;
+}
+
+.page-produit{
     width: 100%;
 }
 

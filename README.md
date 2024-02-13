@@ -38,6 +38,8 @@ idées de SS :
 - Développement de la page main (html et css) entre le 05 et 09/02/2024
 - Création de Database le 10/02/2024
 - Création de fichiers js pour générer le catalogue via la database et les pages produits via également la database le 11/02/2024        
-
+- Développement et finitions du CSS sur la page catalogue et du panier le 12/02/2024
+- Correction de quelques bugs côté javascript le 12/02/2024
+- Finition de la base de donnée le 12/02/2024   
 
 

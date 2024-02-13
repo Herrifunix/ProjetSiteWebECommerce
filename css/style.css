@@ -11,7 +11,6 @@ body{
     padding: 1% 1%;
     display: flex;
     flex-wrap: wrap;
-    min-height: 20px;
 }
 
 
@@ -133,7 +132,6 @@ main{
     width: 100%;
     background: rgb(255, 255, 255);
     justify-content: space-around;
-    min-height: 80vh;
 }
 
 section{
@@ -183,6 +181,7 @@ ul :nth-child(3){
     font-size: 80%;
     font-family: sans-serif;
 }
+
 .mise-en-page-produit{
     width: 25%;
 }
@@ -215,6 +214,7 @@ ul :nth-child(3){
     color: red;
 }
 
+=======
 
 footer{
     width: 100%;

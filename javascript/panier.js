@@ -23,10 +23,12 @@ const panierVide = `
 
     for(k = 0;k < produitSaveInLocalStorage.length; k++){
         structureProduitsPanier = structureProduitsPanier + `
+
+    
         <div class="container-recapitulatif">
             <div>Quantité : ${produitSaveInLocalStorage[k].quantite} - ${produitSaveInLocalStorage[k].nomProduit} Options : ${produitSaveInLocalStorage[k].optionProduit}</div>
             <div>${produitSaveInLocalStorage[k].prix} € - <button class="btn-supprimer">Supprimer</button></div>
-        </div>           
+        </div>         
         `;
         }
         if(k == produitSaveInLocalStorage.length){
@@ -81,6 +83,7 @@ positionElement3.insertAdjacentHTML("beforeend",affichagePrix);
 //------------------Bouton pour supprimer tout-----------------
 
 const btn_suppr_all_html = `
+<div id=centre>
 <button class="btn_suppr_all"> Vider le panier</button>
 `;
 
@@ -106,7 +109,7 @@ window.location.href = "panier.html";
 
 const btnValideCommande = `
 <a id="btnValideCommande" href="ValidationCommande.html">Valider la commande</a>
-`;
+</div>`;
 
 console.log(positionElement3);
 

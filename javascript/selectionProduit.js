@@ -20,7 +20,7 @@ const positionElement2 = document.querySelector(".containerPageProduit");
 
 //structure html pour le produit
 const structureProduits2 =
-`<article class = "mise-en-page-produit">
+`<article class = "page-produit">
     <div class="produit">
     
 <ul>
